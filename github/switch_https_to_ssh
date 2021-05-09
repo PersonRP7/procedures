@@ -1,0 +1,4 @@
+1.Get repository name:
+	git remote get-url origin
+2.Set repository name:
+	git remote set-url origin git@github.com:username/repository_name.git 

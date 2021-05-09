@@ -1,0 +1,5 @@
+Scenario:
+	Files have been deleted on the local machine. How to restore them?
+Solution:
+	git checkout .
+
