@@ -1,0 +1,2 @@
+1. Windows services -> ssh-agent -> Automatic startup type and set service status to running.
+2. git config --global core.sshCommand C:/Windows/System32/OpenSSH/ssh.exe
