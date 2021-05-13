@@ -1,0 +1,2 @@
+1. find / -type f -name "vimrc_example.vim"
+2. On Debian: /usr/share/vim/vim81/vimrc_example.vim
