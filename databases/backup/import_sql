@@ -1,0 +1,6 @@
+#Windows
+1. Place backup file in C:\Program Files\MariaDB 10.5\bin
+2. create database.  
+3. cd to the location of mysql.exe 
+4. mysql.exe -uroot -ppassword mysql_imported < db-backup.sql
+
