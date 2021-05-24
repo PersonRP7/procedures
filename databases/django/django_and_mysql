@@ -1,0 +1,6 @@
+1. Install first to allow the installation of mysqlclient.
+sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
+2. Create a user for the django app. Grant permissions.
+        create user 'django'@'localhost' identified by 'django-user-password';
+        grant usage on *.* to 'django'@'localhost';
+        grant all privileges on for_django.* to 'django'@'localhost';
