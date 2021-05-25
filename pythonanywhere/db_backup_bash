@@ -1,0 +1,4 @@
+#!/bin/bash
+#$1 = username
+#$2 = database
+mysqldump -u $1 -h $1.mysql.pythonanywhere-services.com --set-gtid-purged=OFF --no-tablespaces "$1\$$2"  > db-backup.sql
