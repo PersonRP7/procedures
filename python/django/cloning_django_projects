@@ -1,0 +1,16 @@
+1. Match django versions in requirements.txt
+2. Set DEBUG = True
+3. Set ALLOWED_HOSTS = 	["*"]
+4. Set database:
+DATABASES = {
+	'default': {
+	    'ENGINE': 'django.db.backends.mysql',
+	    'NAME': 'database_name',
+	    'USER': 'django',
+	    'PASSWORD': '********' 
+	    'HOST': 'localhost',
+	    'PORT': 3307
+		}
+}
+5. Comment out STATIC_ROOT, leave only STATIC_URL.
+6. MEDIA_ROOT should be MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
