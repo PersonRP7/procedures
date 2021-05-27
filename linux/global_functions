@@ -1,0 +1,7 @@
+1. ~/.bashrc #Restart after adding a function.
+function g() {
+        git add -A
+        git commit -m $1
+        git push -u origin master
+}
+
