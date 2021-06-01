@@ -1,0 +1,2 @@
+# Write permission for eclipse.
+sudo chmod -R ugo+rw directory
