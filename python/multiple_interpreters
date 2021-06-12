@@ -1,0 +1,8 @@
+1. whereis python3.8
+2. /usr/local/bin/python3.8
+3. /usr/local/bin/python3.8 -m venv env
+Addendum: This is to be used with either sudo or sudo su.
+Addendum2: Not to be confused with /usr/local/lib/python3.8
+###Using PIP###
+1. (env) whereis pip
+2. sudo /usr/local/bin/pip3.8 install -r requirements.txt
