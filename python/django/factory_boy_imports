@@ -1,0 +1,8 @@
+import factory
+from factory import Fuzzy #This step is necessary when using fuzzy.
+class AparatFactoryAdmin(factory.django.DjangoModelFactory):
+    class Meta:
+        model = Aparat
+    autor = CustomUser.objects.get(username = 'admin')
+    ime = factory.fuzzy.FuzzyText(length=4, prefix='ABC')
+    serijski_broj = factory.fuzzy.FuzzyText(length=6, prefix='AA')
