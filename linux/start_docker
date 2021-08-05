@@ -1,0 +1,7 @@
+Using docker on this CentOS configuration necessitates manual docker starting
+for the time being.
+
+To wit:
+	sudo service docker start
+Or:
+	Running the script: ~/Desktop/scripts/d
