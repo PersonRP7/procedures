@@ -1,0 +1,1 @@
+Set max_digits for the DecimalField to 8, as the setting max_digits = 6, decimal_places = 2 causes a quantize overflow error.
