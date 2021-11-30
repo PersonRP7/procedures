@@ -1,0 +1,10 @@
+#As admin:
+Get-Service LxssManager | Restart-Service
+#Shutdown all instances:
+wsl.exe --shutdown
+
+#Shutdown a specific instance
+wsl.exe -t Ubuntu
+
+#Show current instances
+wsl.exe -l
