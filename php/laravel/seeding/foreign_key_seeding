@@ -1,0 +1,31 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use App\Models\Breed;
+use Illuminate\Support\Facades\DB;
+use Faker\Factory as Faker;
+use Carbon\Carbon;
+
+class CatsSeeder2 extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $this->faker = Faker::create();
+        DB::table('cats')->insert([
+            [
+            'name' => $this->faker->name, 
+            'date_of_birth' => Carbon::now(),
+            'breed_id' => Breed::inRandomOrder()->first()->id
+            ]
+        ]);
+    }
+}
+
