@@ -1,0 +1,6 @@
+1. wsl.exe --shutdown
+2. restart distro
+3. cp -r /mnt/c/Users/<username>/.ssh ~/.ssh
+4. chmod 600 ~/.ssh/id_ed25519
+5. eval $(ssh-agent)
+6. ssh-add
