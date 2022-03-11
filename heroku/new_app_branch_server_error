@@ -1,0 +1,2 @@
+Manually add APP_KEY
+php artisan key:generate --show
