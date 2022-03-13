@@ -1,2 +1,2 @@
 eval $(ssh-agent)
-ssh -add #It prompts for password at this point. 
+ssh-add #It prompts for password at this point. 
