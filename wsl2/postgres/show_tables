@@ -1,0 +1,6 @@
+\c database_name
+\dt
+
+or:
+
+SELECT * FROM pg_catalog.pg_tables;
