@@ -1,0 +1,2 @@
+Delete everything inside the current directory except hidden files:
+rm *
