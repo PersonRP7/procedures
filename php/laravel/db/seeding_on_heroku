@@ -1,0 +1,4 @@
+Move faker to require
+composer install
+(php artisan migrate:refresh)
+php artisan db:seed
