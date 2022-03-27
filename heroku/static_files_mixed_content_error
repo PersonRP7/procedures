@@ -1,0 +1,11 @@
+App/Providers/AppServiceProvider
+
+ public function boot()
+    {
+        if(env('APP_ENV') == 'production') {
+            \URL::forceScheme('https');
+        }
+    }
+
+Heroku Config Vars:
+	APP_ENV : production
