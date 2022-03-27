@@ -1,0 +1,2 @@
+Add field to the migration.
+php artisan migrate:refresh to delete all data and migrate again.
