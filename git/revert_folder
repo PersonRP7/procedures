@@ -3,3 +3,5 @@ git reset --hard 0ad5a7a6
 https://www.git-tower.com/learn/git/faq/restore-repo-to-previous-revision
 #git reset --hard leaves untracked files, use:
 git clean -f -d
+#After reset --hard, the origin branch also needs to be updated:
+git push -f origin dev
