@@ -1,0 +1,2 @@
+\d* #all tables
+\d users #specific table
