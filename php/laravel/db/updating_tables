@@ -1,0 +1,8 @@
+#Create new migration with the --table option
+#Remove the column in the up method as its run under php artisan migrate
+    public function up()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('username');
+        });
+    }
