@@ -6,3 +6,4 @@
             $table->dropColumn('username');
         });
     }
+php artisan make:migration alter_table_users --table users
