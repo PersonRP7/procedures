@@ -1,0 +1,5 @@
+#Reset everything, including the files to the last commit:
+git reset --hard HEAD^
+
+#Undo the act of committing, leaving everything else intact:
+git reset --soft HEAD^
