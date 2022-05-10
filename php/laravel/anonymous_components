@@ -1,0 +1,12 @@
+#Create:
+php artisan make:component Roles/Forms/EditRole --view
+
+#Component:
+@props(['role'])
+
+<div>
+Hello {{ $role->role }}
+</div>
+
+#View:
+<x-roles.forms.edit-role-anon :role='$role' />
