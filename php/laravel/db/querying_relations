@@ -1,0 +1,7 @@
+Foreign key:
+	With defined hasMany and belongsTo on the respective models:
+	(1) hasMany:
+		 $posts = $user->posts;
+	(2) belongsTo:
+		$post->user->name;
+		
