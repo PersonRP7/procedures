@@ -1,0 +1,6 @@
+#Installed on wsl2
+sudo apt-get install aptitude #to fix unmet dependencies
+sudo apt-get install python3-pip
+sudo apt-get update
+sudo aptitude install libffi-dev libssl-dev -y
+pip install --user ansible pywinrm
