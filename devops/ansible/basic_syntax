@@ -1,0 +1,14 @@
+---
+
+- hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+          - name: list files and folders.
+            shell: 'ls -l'
+            register: command_output
+
+          - debug:
+                  var: command_output.stdout_lines
+
+#ansible-playbook pb.yml
