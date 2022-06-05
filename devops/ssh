@@ -1,0 +1,12 @@
+1. adduser username #usermod -a -G sudo username
+2. mkdir ~/.ssh #The new user's home directory
+3. chown -R username:username /home/username/.ssh
+4. chmod 700 /home/username/.ssh
+5. chmod 600 /home/username/.ssh/authorized_keys #touch authorized_keys first.
+------------------------------------------------------------------------------
+
+Client side:
+1. ssh-keygen (choose different file name optionally, id_rsa1)
+2. type $env:USERPROFILE\.ssh\id_rsa1.pub | ssh root@address "cat >> /home/username/.ssh/authorized_keys"
+3. ssh username@address
+4. Enter that user's pwd.
