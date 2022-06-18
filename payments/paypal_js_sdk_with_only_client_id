@@ -1,0 +1,6 @@
+PayPal JavaScript SDK with only client-id (no secret key)
+Yes; a client-side only integration of the PayPal JavaScript SDK uses only a client-id.
+
+A secret would instead be used to integrate server-side API calls (see the optional bullet #5 in add and modify the code here). That is something you should do if you need to record successful transactions in a database or anything of that nature.
+
+https://stackoverflow.com/questions/68067476/paypal-javascript-sdk-with-only-client-id-no-secret-key
