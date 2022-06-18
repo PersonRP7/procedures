@@ -1,0 +1,8 @@
+        var form = document.getElementById('form')
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const data = new FormData(form);
+            for (const [name,value] of data) {
+              console.log(name, ":", value)
+            }
+        })
