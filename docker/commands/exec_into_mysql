@@ -1,0 +1,1 @@
+docker exec -it docker-django-mysql-1 mysql -umysql_user -pmysql_password
