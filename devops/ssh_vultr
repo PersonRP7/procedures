@@ -1,0 +1,7 @@
+1. Generate keypair with ssh_keygen (set new name).
+2. powershell will store the keys in the current directory.
+3. cd to C:\Users\$User/.ssh
+4. copy both keys (public and private)
+5. ssh -i id_ed25519_vultr root@address
+6. enter the password vultr set upon creation.
+7. this presupposes that the public key was inserted during vultr server creation process.
