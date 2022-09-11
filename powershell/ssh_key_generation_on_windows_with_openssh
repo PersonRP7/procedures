@@ -1,0 +1,2 @@
+The ssh keys are stored in the powershell's current directory.
+Not C:\Users\$user/.ssh
