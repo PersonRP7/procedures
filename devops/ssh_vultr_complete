@@ -1,0 +1,15 @@
+1. Install distro
+2. ssh-keygen -t ed25519 -C "email@address.com"
+3. the ssh keypair will be store in the current shell location.
+4. copy the public key into vultr menu as part of the distro installation process.
+5. ssh root@address.
+6. Enter pwd provided by vultr.
+7. adduser user
+8. usermod -aG sudo user
+9. ssh-keygen -t ed25519 -C "email@address.com" (Choose different file name,)
+10. cd to ~/user
+11. touch authorized_keys
+12. mkdir .ssh
+13. type C:\Users\user\.ssh\vultr\id_ed25519vultr1 | ssh dell@address "cat >> /home/user/.ssh/authorized_keys"
+14. enter the new user's password when loggin in as the new user.
+
