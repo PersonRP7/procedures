@@ -1,0 +1,5 @@
+1.Remove package from requirements.txt
+2.pip uninstall <<package>>
+3.Remove field import from the top of the migration file.
+4.Modify the custom field to something available, ie. QuillField to TextField
+5.makemigrations
