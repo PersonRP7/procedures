@@ -1,0 +1,3 @@
+Default wordpress image:
+	wp:
+		/var/www/html/
