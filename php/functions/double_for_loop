@@ -1,0 +1,7 @@
+>>> foreach($params as $param){
+...     foreach(Meal::all() as $meal){
+...         if ($meal->$param > MealDataGenerator::getStrFromUnixT('1493902343')){
+...                 echo $meal;
+...                 }
+...         }
+...     }
