@@ -1,0 +1,1 @@
+Ingredient::whereHas('meals', function($query){return $query->where('id', 4);})->get();
