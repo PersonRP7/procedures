@@ -1,1 +1,4 @@
 Ingredient::whereHas('meals', function($query){return $query->where('id', 4);})->get();
+
+Tag::whereHas('meals', function($query){return $query->where('meal_id', 7);})->get();
+Above in case of ambiguity
