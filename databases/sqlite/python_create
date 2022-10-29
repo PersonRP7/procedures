@@ -1,0 +1,28 @@
+db = sqlite3.connect("words.db")
+ALLOWED_TABLES_NAMES = ['star_wars', 'pork'] 
+
+def cur():
+    return db.cursor()
+
+def get_db_connection(db_name: str) -> sqlite3.Connection:
+    """Example: get_db_connection(words)"""
+    return sqlite3.connect(f'{db_name}.db')
+
+def create_table(db_name: str, table_name: str) -> None:
+    """Example: create_table(furniture, chairs)
+       Uses get_db_connection 
+    """
+    connection = get_db_connection(db_name)
+    connection.execute(
+        f'''
+        CREATE TABLE IF NOT EXISTS {table_name}
+        (   ID INTEGER PRIMARY KEY,
+            WORD TEXT
+        );
+        '''
+    )
+    connection.close()
+
+def table_creator() -> None:
+    for allowed_table_name in ALLOWED_TABLES_NAMES:
+        create_table("words", allowed_table_name)

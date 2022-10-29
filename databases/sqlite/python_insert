@@ -1,0 +1,5 @@
+def insert_into(table: str, value: str):
+    cursor = cur()
+    sql = 'insert into {}(word) VALUES(?);'.format(table)
+    cursor.execute(sql, (value,))
+    cursor.connection.commit()
