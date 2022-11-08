@@ -1,0 +1,2 @@
+[Illuminate\Database\QueryException] could not find driver
+sail composer update
