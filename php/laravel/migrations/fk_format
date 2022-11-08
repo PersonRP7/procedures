@@ -1,0 +1,8 @@
+        Schema::table('resource_booking_statuses', function (Blueprint $table) {
+            $table->foreignId('user_id')
+            ->nullable()
+            ->constrained('users')
+            ->onDelete('cascade');
+        });
+
+Any additional column modifiers must be called before the constrained method
