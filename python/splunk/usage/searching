@@ -1,0 +1,1 @@
+source="registration.csv" | where (total_count>0)
