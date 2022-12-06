@@ -1,0 +1,1 @@
+source="reg2.csv" | stats count

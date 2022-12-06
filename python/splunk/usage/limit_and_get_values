@@ -1,0 +1,1 @@
+source="registration.csv" | where plate != "518-2" | fields (plate) | head 1 |stats values(plate)

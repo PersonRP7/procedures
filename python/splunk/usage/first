@@ -1,0 +1,1 @@
+source="registration.csv" | where plate != "518-2" | stats first
