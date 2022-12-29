@@ -1,0 +1,1 @@
+source="reg2.csv" | where (total_count>0) | rex field=total_count "(?<y>\w{1})$" | table total_count | rex field=total_count "(?<y>\w{1})$"

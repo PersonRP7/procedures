@@ -1,0 +1,1 @@
+source="reg2.csv" | eval with_solution=if(total_count > 0,1,0) | stats count sum(with_solution) as with_solution | eval Ratio = with_solution/count

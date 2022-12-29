@@ -1,0 +1,1 @@
+source="reg2.csv" | eventstats max(total_count) | where (total_count>0) | table plate | rex field=plate "(?<plate>\w{1})$" | eval plate != 0 | eval plate !=1

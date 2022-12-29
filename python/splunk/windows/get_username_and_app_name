@@ -1,0 +1,8 @@
+| rest splunk_server=local /services/authentication/current-context 
+| table username 
+| eval 
+    [ rest /services/search/jobs splunk_server=local 
+    | addinfo 
+    | where sid=info_sid 
+    | rename eai:acl.app as my_app_name 
+    | return my_app_name]

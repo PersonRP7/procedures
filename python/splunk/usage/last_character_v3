@@ -1,0 +1,1 @@
+source="reg2.csv" | eventstats max(total_count) | where (total_count>0) | rex field=last_digit "(?<plate>\w{1})$" | eval last_digit !=1 | eval last_digit !=0 | table plate`

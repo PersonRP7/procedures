@@ -1,0 +1,1 @@
+classic_machines = CoffeeMachine.objects.all().order_by(F('ordering').asc(nulls_last = True))
